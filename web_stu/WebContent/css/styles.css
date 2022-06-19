@@ -1,0 +1,200 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: '宋体';
+	/* font-size: small; */
+	font-weight: bold;
+}
+
+#container {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+#header {
+	position: relative;
+	height: 140px;
+	background-color: #60a3bc;
+}
+
+a {
+	color: black;
+	font-family:'宋体';
+	text-decoration: none;
+}
+
+#header a{
+	color: white;
+	font-size: 20px;
+}
+
+a:hover {
+	color: #60a3bc;
+	text-decoration: underline;
+}
+
+select {
+	width: 150px;
+}
+
+#quit {
+	float: right;
+	padding-top: 5px;
+	padding-right: 20px;
+}
+
+#menu{
+	position: absolute;
+	padding-left:600px;
+	transform: translate(-60%,-30%);
+	}
+#menu li{
+	list-style: none;
+	float:left;
+}
+#menu li a{
+	position: relative;
+	display: block;
+	padding: 10px 35px;
+	margin: 20px 0;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 700;
+	transition: .5s;
+}
+#menu li a:hover{
+	color: #60a3bc;
+}
+#menu li a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	transform: scaleY(2);
+	opacity: 0;
+	transition: .5s;
+	z-index: -1;
+}
+#menu li a:hover:before{
+	transform: scaleY(1.2);
+	opacity: 1;
+}
+#menu li a:after{
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	transform: scale(0);
+	transition: .5s;
+	z-index: -1;
+}
+#menu li a:hover:after{
+	transform: scale(1);
+}
+#header h1 {
+	margin: 0 auto;
+	width: 240px;
+	padding-top: 40px;
+	color: #ffffff;
+	font-size: 36px;
+}
+
+#content {
+	*height: 240px; /*ie6 ie7生效*/
+	min-height: 240px; /*ie7 ff生效*/
+	*height: auto !important; /*修正ie7下height:100px为自动高度*/
+	padding-top: 30px;
+	background-color: #f7f1e3;
+}
+#content form{
+	width:800px;
+	margin:0 auto;
+}
+#content table {
+	width: 550px;	
+	margin: 0 auto;
+}
+
+#content table tr{
+	height:26px;
+	text-align:center;
+	width:50px
+}
+
+#content table.wide {
+	width: 400px;
+	margin: 0 auto;
+}
+
+#content table.wide td {
+	vertical-align: middle;
+	width: auto;
+	
+}
+
+#content thead td {
+	text-align: center;
+}
+
+#content td {
+	margin:0 auto;	
+	padding:5px;
+}
+
+
+#content a {
+	margin: 0 auto;
+
+}
+#content a:hover {
+	color: white;
+	margin: 0 auto;
+}
+
+#content input {
+	height: 28px;
+	width: 200px;
+}
+
+
+#content .cols2 ,#content .cols4{
+	text-align: center;
+}
+
+#content .cols2 input {
+	
+	width: 70px;
+	padding: 0px;
+	margin-left: 20px;
+	
+}
+
+#content .result {
+	background: white;
+	text-align: center;
+}
+
+#content .result a {
+	color: #0fb9b1;
+}
+
+#content .info {
+	color: #0fb9b1;
+	margin: 0 auto;
+}
+
+#footer {
+	height: 120px;
+	background-color: #60a3bc;
+}
